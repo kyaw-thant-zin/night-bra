@@ -50,20 +50,6 @@ a:hover {
   transition: .5s
 }
 
-.isSp {
-  display: block;
-  @include mediaQueryPc() {
-    display: none !important;
-  }
-}
-
-.isPc {
-  display: block;
-  @include mediaQuerySp() {
-    display: none !important;
-  }
-}
-
 .d-fl {
   display: -webkit-box;
   display: -moz-box;
@@ -83,6 +69,20 @@ a:hover {
   flex-wrap: wrap
 }
 
+.isSp {
+  display: block;
+  @include mediaQueryPc() {
+    display: none !important;
+  }
+}
+
+.isPc {
+  display: block;
+  @include mediaQuerySp() {
+    display: none !important;
+  }
+}
+
 .inner {
   width: 90%;
   max-width: 1100px;
@@ -91,4 +91,32 @@ a:hover {
 
 .no-scroll {
   overflow: hidden;
+}
+
+.cmn-ttl {
+  h2 {
+    position: relative;
+    color: #FF8205;
+    font-family: $font_georgia;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 50px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    padding-bottom: 24px;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      width: 1px;
+      height: 24px;
+      background-color: #FF8205;
+    }
+  }
 }

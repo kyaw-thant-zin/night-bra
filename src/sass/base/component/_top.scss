@@ -6,6 +6,9 @@
       margin-top: 77.3px;
     }
     &-inner {
+      .slick-dotted.slick-slider {
+        margin-bottom: 0px;
+      }
       .slider {
         .slick-dots {
           bottom: 10px;
@@ -42,6 +45,109 @@
           }
         }
       }
+    }
+  }
+  &-about {
+    &-inner {
+      margin-top: 86px;
+      &-content {
+        margin-top: 26px;
+        text-align: center;
+        h3 {
+          color: #7D7D7D;
+          font-family: $font_georgia;
+          font-weight: bold;
+          font-size: 27px;
+          line-height: 31px;
+          letter-spacing: 0.02em;
+        }
+        p {
+          margin-top: 25px;
+          color: #7D7D7D;
+          font-family: $font_yugothic;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 20px;
+          letter-spacing: 0.02em;
+        }
+      }
+    }
+  }
+  &-item {
+    position: relative;
+    &-inner {
+      position: relative;
+      margin-top: 88px;
+      z-index: 1;
+      &-content {
+        &-fl {
+          margin-top: 190px;
+          &-l {
+            width: 50%;
+            margin-bottom: 75px;
+            padding-right: 105px;
+            padding-left: 60px;
+            &:nth-child(4n+1) {
+              padding-left: 105px;
+              padding-right: 60px;
+            }
+            &:nth-last-child(2) {
+              margin-bottom: 0px;
+            }
+          }
+          &-r {
+            width: 50%;
+            margin-top: -150px;
+            margin-bottom: 75px;
+            padding-left: 10px;
+            padding-right: 155px;
+            &:nth-child(4n+2) {
+              padding-left: 60px;
+              padding-right: 105px;
+            }
+            &:last-child {
+              margin-bottom: 0px;
+            }
+          }
+          li {
+            a {
+              section {
+                margin-top: 10px;
+                justify-content: space-between;
+                h2,p {
+                  font-family: $font_carter;
+                  font-weight: bold;
+                  font-size: 14px;
+                  line-height: 19px;
+                  letter-spacing: 0.02em;
+                }
+              }
+            }
+          }
+        }
+        &-btn {
+          margin-top: 60px;
+          text-align: center;
+          a {
+            display: inline-block;
+            font-family: $font_georgia;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 32px;
+            padding: 20px 90px;
+            margin: auto;
+            border: 2px solid #F49969;
+          }
+        }
+      }
+    }
+    .item-bg {
+      position: absolute;
+      top: 7%;
+      left: 0;
+      width: 69%;
+      height: 87.05%;
+      background-color: #F49969;
     }
   }
 }
