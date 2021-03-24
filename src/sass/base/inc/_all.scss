@@ -50,6 +50,20 @@ a:hover {
   transition: .5s
 }
 
+.isPc {
+  display: block;
+  @include mediaQuerySp() {
+    display: none;
+  }
+}
+
+.isSp {
+  display: block;
+  @include mediaQueryPc() {
+    display: none;
+  }
+}
+
 .d-fl {
   display: -webkit-box;
   display: -moz-box;
