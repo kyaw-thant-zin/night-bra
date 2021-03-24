@@ -1,5 +1,12 @@
 .l {
   &-mv {
+    margin-top: 106px;
     overflow: hidden;
+    @include mediaQuerySp() {
+      margin-top: 77.3px;
+    }
+    &-inner {
+      
+    }
   }
 }
