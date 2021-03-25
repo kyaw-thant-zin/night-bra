@@ -5,40 +5,41 @@ var itemImgPaddingRight = 0;
 var totalSpace = 0;
 
 $(window).on('load', function () { //全ての読み込みが完了したら実行
+  console.log('load');
   $('#page').css('display', 'none');
   $('#loader').fadeIn(1000);
   $('body').addClass('no-scroll');
 });
 
-$(function () {
-  $(function () {
-    $('#loader-bg').delay(3000).fadeOut(400, function () {
-      $('body').removeClass('no-scroll');
-    });
-    $('#page').slideUp(400).css('display', 'block');
+$(document).ready(function () {
 
+  console.log('ready');
+
+  $('#loader-bg').delay(3000).fadeOut(400, function () {
+    $('body').removeClass('no-scroll');
+  });
+  $('#page').slideUp(400).css('display', 'block');
+
+  // set Item bg width
+  addItemBgWidth();
+
+  $(window).on('resize', function () {
     // set Item bg width
     addItemBgWidth();
-
-    $(window).on('resize', function () {
-      // set Item bg width
-      addItemBgWidth();
-    });
+  });
 
 
-    // SP nav toggler click
-    $('.spnav-toggler').on('click', function () {
-      if ($(this).hasClass('activenav')) {
-        $('body').removeClass('no-scroll');
-        $(this).removeClass('activenav');
-        $('.sp-menu').removeClass('activespnav');
-      } else {
-        $('body').addClass('no-scroll');
-        $(this).addClass('activenav');
-        $('.sp-menu').addClass('activespnav');
-      }
-    });
-
+  // SP nav toggler click
+  $('.spnav-toggler').on('click', function () {
+    if ($(this).hasClass('activenav')) {
+      $('body').removeClass('no-scroll');
+      $(this).removeClass('activenav');
+      $('.sp-menu').removeClass('activespnav');
+    } else {
+      $('body').addClass('no-scroll');
+      $(this).addClass('activenav');
+      $('.sp-menu').addClass('activespnav');
+    }
   });
 });
 
