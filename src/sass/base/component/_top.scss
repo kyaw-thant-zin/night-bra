@@ -69,6 +69,9 @@
           font-size: 16px;
           line-height: 20px;
           letter-spacing: 0.02em;
+          @include mediaQuerySp() {
+            text-align: left;
+          }
         }
       }
     }
@@ -146,21 +149,17 @@
                 h2 {
                   @include mediaQuerySp() {
                     width: 100%;
-                    font-size: 24px;
-                    line-height: 32px;
                   }
                 }
                 p {
                   @include mediaQuerySp() {
                     width: 100%;
-                    font-size: 20px;
-                    line-height: 27px;
                   }
                 }
                 span {
                   @include mediaQuerySp() {
-                    font-size: 18px;
-                    line-height: 24px;
+                    font-size: 12px;
+                    line-height: 16px;
                   }
                 }
               }
@@ -187,6 +186,8 @@
               color: #F5A981;
               text-transform: uppercase;
               font-family: $font_carter;
+              font-size: 18px;
+              padding: 10px 70px;
             }
           }
         }
@@ -199,6 +200,43 @@
       width: 69%;
       height: 87.05%;
       background-color: #F49969;
+    }
+  }
+  &-brand {
+    background: #CB9991;
+    &-inner {
+      margin-top: 110px;
+      @include mediaQuerySp() {
+        margin-top: 80px;
+      }
+      &-content {
+        padding: 60px 0px;
+        text-align: center;
+        section {
+          h2 {
+            color: #ffffff;
+            font-family: $font_yugothic;
+            font-size: 28px;
+            line-height: 32px;
+          }
+          figure {
+            margin: 20px 0px 40px;
+            img {
+              width: auto;
+              height: 107px;
+              @include mediaQuerySp() {
+                height: 70px;
+              }
+            }
+          }
+          p {
+            color: #ffffff;
+            font-family: $font_yugothic;
+            font-size: 16px;
+            line-height: 32px;
+          }
+        }
+      }
     }
   }
 }
