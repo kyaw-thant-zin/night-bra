@@ -82,14 +82,26 @@
       &-content {
         &-fl {
           margin-top: 190px;
+          @include mediaQuerySp() {
+            margin-top: 135px;
+          }
           &-l {
             width: 50%;
             margin-bottom: 75px;
             padding-right: 105px;
             padding-left: 60px;
+            @include mediaQuerySp() {
+              width: calc(50% - 15px);
+              margin-bottom: 55px;
+              padding: 0px;
+              margin-right: 15px;
+            }
             &:nth-child(4n+1) {
               padding-left: 105px;
               padding-right: 60px;
+              @include mediaQuerySp() {
+                padding: 0px;
+              }
             }
             &:nth-last-child(2) {
               margin-bottom: 0px;
@@ -101,9 +113,19 @@
             margin-bottom: 75px;
             padding-left: 10px;
             padding-right: 155px;
+            @include mediaQuerySp() {
+              width: calc(50% - 15px);
+              margin-bottom: 55px;
+              padding: 0px;
+              margin-left: 15px;
+              margin-top: -95px;
+            }
             &:nth-child(4n+2) {
               padding-left: 60px;
               padding-right: 105px;
+              @include mediaQuerySp() {
+                padding: 0px;
+              }
             }
             &:last-child {
               margin-bottom: 0px;
@@ -121,6 +143,26 @@
                   line-height: 19px;
                   letter-spacing: 0.02em;
                 }
+                h2 {
+                  @include mediaQuerySp() {
+                    width: 100%;
+                    font-size: 24px;
+                    line-height: 32px;
+                  }
+                }
+                p {
+                  @include mediaQuerySp() {
+                    width: 100%;
+                    font-size: 20px;
+                    line-height: 27px;
+                  }
+                }
+                span {
+                  @include mediaQuerySp() {
+                    font-size: 18px;
+                    line-height: 24px;
+                  }
+                }
               }
             }
           }
@@ -128,7 +170,11 @@
         &-btn {
           margin-top: 60px;
           text-align: center;
+          @include mediaQuerySp() {
+            margin-top: 75px;
+          }
           a {
+            color: #FC8223;
             display: inline-block;
             font-family: $font_georgia;
             font-weight: bold;
@@ -137,6 +183,11 @@
             padding: 20px 90px;
             margin: auto;
             border: 2px solid #F49969;
+            @include mediaQuerySp() {
+              color: #F5A981;
+              text-transform: uppercase;
+              font-family: $font_carter;
+            }
           }
         }
       }
