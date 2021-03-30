@@ -49,9 +49,9 @@
   }
   &-about {
     &-inner {
-      margin-top: 86px;
+      margin-top: 90px;
       &-content {
-        margin-top: 26px;
+        margin-top: 30px;
         text-align: center;
         h3 {
           color: #7D7D7D;
@@ -80,28 +80,30 @@
     position: relative;
     &-inner {
       position: relative;
-      margin-top: 88px;
+      margin-top: 90px;
       z-index: 1;
       &-content {
         &-fl {
-          margin-top: 190px;
+          width: 90%;
+          max-width: 895px;
+          margin: 200px auto 0;
+          justify-content: space-between;
           @include mediaQuerySp() {
             margin-top: 135px;
           }
           &-l {
-            width: 50%;
+            width: 43.3%;
             margin-bottom: 75px;
-            padding-right: 105px;
-            padding-left: 60px;
             @include mediaQuerySp() {
               width: calc(50% - 15px);
               margin-bottom: 55px;
               padding: 0px;
               margin-right: 15px;
             }
+            &:nth-child(2n) {
+              margin-right: 0;
+            }
             &:nth-child(4n+1) {
-              padding-left: 105px;
-              padding-right: 60px;
               @include mediaQuerySp() {
                 padding: 0px;
               }
@@ -111,11 +113,9 @@
             }
           }
           &-r {
-            width: 50%;
+            width: 43.3%;
             margin-top: -150px;
             margin-bottom: 75px;
-            padding-left: 10px;
-            padding-right: 155px;
             @include mediaQuerySp() {
               width: calc(50% - 15px);
               margin-bottom: 55px;
@@ -124,8 +124,6 @@
               margin-top: -95px;
             }
             &:nth-child(4n+2) {
-              padding-left: 60px;
-              padding-right: 105px;
               @include mediaQuerySp() {
                 padding: 0px;
               }
@@ -199,7 +197,7 @@
       left: 0;
       width: 69%;
       height: 87.05%;
-      background-color: #F49969;
+      background-color: rgba($color: #F49969, $alpha: 0.2)
     }
   }
   &-brand {

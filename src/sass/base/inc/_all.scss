@@ -107,7 +107,7 @@ a:hover {
     &::after {
       content: '';
       position: absolute;
-      bottom: 0;
+      bottom: -5px;
       left: 50%;
       transform: translateX(-50%);
       -webkit-transform: translateX(-50%);
@@ -115,7 +115,7 @@ a:hover {
       -ms-transform: translateX(-50%);
       -o-transform: translateX(-50%);
       width: 1px;
-      height: 24px;
+      height: 25px;
       background-color: #FF8205;
     }
   }

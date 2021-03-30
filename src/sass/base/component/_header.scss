@@ -31,6 +31,9 @@
           align-items: center;
           li {
             margin-right: 30px;
+            &.hd-cart {
+              margin-right: 0;
+            }
             &:last-child {
               margin-right: 0px;
               a {
