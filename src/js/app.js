@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
   $('.slider').slick({
     dots: true,
     infinite: true,
@@ -6,6 +6,7 @@ $(document).ready(function(){
     speed: 500,
     swipe: true,
     fade: true,
-    cssEase: 'linear'
+    cssEase: 'linear',
+    accessibility: false
   });
 });
