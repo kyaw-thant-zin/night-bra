@@ -11,19 +11,19 @@ $(window).on('load', function () { //全ての読み込みが完了したら実�
   $('#page').slideUp(400).css('display', 'block');
 });
 
-// $(document).ready(function () {
+$(document).ready(function () {
 
-  // $('#page').css('display', 'none');
-  // $('#loader').fadeIn(1000);
-  // $('body').addClass('no-scroll');
+  $('#page').css('display', 'none');
+  $('#loader').fadeIn(1000);
+  $('body').addClass('no-scroll');
 
-  // set Item bg width
-  // addItemBgWidth();
+  //set Item bg width
+  addItemBgWidth();
 
-  // $(window).on('resize', function () {
-  //   // set Item bg width
-  //   addItemBgWidth();
-  // });
+  $(window).on('resize', function () {
+    // set Item bg width
+    addItemBgWidth();
+  });
 
 
   // SP nav toggler click
