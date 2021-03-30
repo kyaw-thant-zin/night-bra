@@ -3,7 +3,7 @@
         margin-top: 106px;
         overflow: hidden;
         @include mediaQuerySp() {
-            margin-top: 77.3px;
+            margin-top: 70.3px;
         }
         &-inner {
             width: 90%;
@@ -107,7 +107,7 @@
             background-color: rgba($color: #F49969, $alpha: 0.2)
               }
                 &-fl {
-                    margin-top: 200px;
+                    margin-top: 175px;
                     padding: 0 80px;
                     box-sizing: border-box;
                     justify-content: space-between;
@@ -137,7 +137,7 @@
                     }
                     &-r {
                         width: 43.6%;
-                        margin-top: -150px;
+                        margin-top: -125px;
                         margin-bottom: 75px;
                         @include mediaQuerySp() {
                             width: calc(50% - 15px);
@@ -218,8 +218,8 @@
             position: absolute;
             top: 6%;
             left: 0;
-            width: 75% !important;
-            height: 88.35%;
+            width: 69vw !important;
+            height: 89%;
             background-color: rgba($color: #F49969, $alpha: 0.2)
         }
     }
@@ -231,6 +231,7 @@
                 margin-top: 80px;
             }
             &-content {
+              position: relative;
                 padding: 60px 0px;
                 text-align: center;
                 section {
@@ -329,6 +330,7 @@
                 }
             }
             &-content {
+              position: relative;
                 margin-top: 40px;
                 &-fl {
                     ul {
