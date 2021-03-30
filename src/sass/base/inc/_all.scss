@@ -104,6 +104,9 @@ a:hover {
     letter-spacing: 0.02em;
     text-align: center;
     padding-bottom: 24px;
+    @include mediaQuerySp(){
+      font-size: 35px;
+    }
     &::after {
       content: '';
       position: absolute;
@@ -117,6 +120,9 @@ a:hover {
       width: 1px;
       height: 25px;
       background-color: #FF8205;
+      @include mediaQuerySp() {
+        bottom: 5px;
+      }
     }
   }
 }

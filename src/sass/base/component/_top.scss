@@ -7,8 +7,10 @@
     }
     &-inner {
       width: 90%;
-      max-width: 1280px;
       margin: 0 auto;
+      @include mediaQuerySp {
+        width: 100%;
+      }
       .slick-dotted.slick-slider {
         margin-bottom: 0px;
       }
@@ -53,6 +55,9 @@
   &-about {
     &-inner {
       margin-top: 90px;
+      @include mediaQuerySp() {
+        margin-top: 60px;
+      }
       &-content {
         margin-top: 30px;
         text-align: center;
@@ -63,6 +68,9 @@
           font-size: 27px;
           line-height: 31px;
           letter-spacing: 0.02em;
+          @include mediaQuerySp() {
+            font-size: 25px;
+          }
         }
         p {
           margin-top: 25px;
@@ -85,6 +93,9 @@
       position: relative;
       margin-top: 90px;
       z-index: 1;
+      @include mediaQuerySp() {
+        margin-top: 60px;
+      }
       &-content {
         &-fl {
           margin-top: 200px;
@@ -92,16 +103,15 @@
           box-sizing: border-box;
           justify-content: space-between;
           @include mediaQuerySp() {
-            margin-top: 135px;
+            margin-top: 100px;
+            padding: 0;
           }
           &-l {
             width: 43.6%;
             margin-bottom: 75px;
             @include mediaQuerySp() {
-              width: calc(50% - 15px);
+              width: calc(50% - 10px);
               margin-bottom: 55px;
-              padding: 0px;
-              margin-right: 15px;
             }
             &:nth-child(2n) {
               margin-right: 0;
@@ -109,7 +119,7 @@
             &:nth-child(4n+1) {
               margin-left: 50px;
               @include mediaQuerySp() {
-                padding: 0px;
+                margin-left: 0;
               }
             }
             &:nth-last-child(2) {
@@ -123,14 +133,12 @@
             @include mediaQuerySp() {
               width: calc(50% - 15px);
               margin-bottom: 55px;
-              padding: 0px;
-              margin-left: 15px;
-              margin-top: -95px;
+              margin-top: -75px;
             }
             &:nth-child(4n+2) {
               margin-right: -50px;
               @include mediaQuerySp() {
-                padding: 0px;
+                margin-right: 0;
               }
             }
             &:last-child {
@@ -173,7 +181,7 @@
           margin-top: 60px;
           text-align: center;
           @include mediaQuerySp() {
-            margin-top: 75px;
+            margin-top: 50px;
           }
           a {
             color: #FC8223;
@@ -222,9 +230,12 @@
             font-size: 28px;
             line-height: 32px;
             font-weight: 600;
+            @include mediaQuerySp() {
+              font-size: 25px;
+            }
           }
           figure {
-            margin: 20px 0px 40px;
+            margin: 30px 0px 40px;
             img {
               width: auto;
               height: 107px;
@@ -239,6 +250,10 @@
             font-size: 16px;
             line-height: 32px;
             font-weight: 500;
+            @include mediaQuerySp() {
+              line-height: 1.5;
+              font-size: 15px;
+            }
           }
         }
       }

@@ -8,13 +8,16 @@
     padding: 30px 0px;
     z-index: 998;
     @include mediaQuerySp() {
-      padding: 23px;
+      padding: 20px;
     }
     &-inn {
       width: 90%;
       margin: 0 auto;
       justify-content: space-between;
       align-items: center;
+      @include mediaQuerySp() {
+        width: 100%;
+      }
       &-logo {
         h1 {
           a {
@@ -35,13 +38,16 @@
             margin-right: 30px;
             &.hd-cart {
               margin-right: 0;
+              @include mediaQuerySp() {
+                margin-right: 15px;
+              }
             }
             &:last-child {
               margin-right: 0px;
               a {
                 @include mediaQuerySp() {
                   position: relative;
-                  width: 46px;
+                  width: 40px;
                   height: 8px;
                   span {
                     position: absolute;

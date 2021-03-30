@@ -15,6 +15,9 @@
             img {
               width: auto;
               height: 36.59px;
+              @include mediaQuerySp() {
+                height: 40px;
+              }
             }
           }
         }
@@ -34,7 +37,7 @@
               width: 100%;
               text-align: center;
               margin-right: 0px;
-              margin-top: 10px;
+              margin-top: 5px;
             }
             a {
               color: #ffffff;
