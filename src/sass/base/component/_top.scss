@@ -182,7 +182,7 @@
             font-weight: bold;
             font-size: 28px;
             line-height: 32px;
-            padding: 20px 90px;
+            padding: 20px 82px;
             margin: auto;
             border: 2px solid #F49969;
             @include mediaQuerySp() {
@@ -218,9 +218,10 @@
         section {
           h2 {
             color: #ffffff;
-            font-family: $font_yugothic;
+            font-family: 'Noto Serif JP', serif;
             font-size: 28px;
             line-height: 32px;
+            font-weight: 600;
           }
           figure {
             margin: 20px 0px 40px;
@@ -237,6 +238,7 @@
             font-family: $font_yugothic;
             font-size: 16px;
             line-height: 32px;
+            font-weight: 500;
           }
         }
       }

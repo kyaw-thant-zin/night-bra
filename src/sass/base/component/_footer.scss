@@ -2,8 +2,9 @@
   &-ft {
     background-color: #FC8223;
     &-inn {
-      padding: 40px 30px;
+      padding: 50px;
       justify-content: space-between;
+      box-sizing: border-box;
       &-logo {
         @include mediaQuerySp() {
           width: 100%;
@@ -26,6 +27,9 @@
         &-fl {
           li {
             margin-right: 25px;
+            &:last-child {
+              margin-right: 0;
+            }
             @include mediaQuerySp() {
               width: 100%;
               text-align: center;
